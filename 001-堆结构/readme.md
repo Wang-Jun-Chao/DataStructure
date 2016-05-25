@@ -20,5 +20,10 @@
 | :--------: | :--------: | :--: |
 | Heap()  | 无参构造函数 |  -   |
 | Heap(T t)     |   构造函数 |  -  |
-| Heap(T t, Comparator<T> comparator)      |    构造函数 | -  |
-| Heap(Comparator<T> comparator) | 构造函数 | - |
+| Heap(T t, Comparator< T > comparator)      |    构造函数 | -  |
+| Heap(Comparator< T > comparator) | 构造函数 | - |
+| Heap(Collection< T > coll) | 构造函数 | - |
+| Heap(Collection< T > coll, Comparator< T > comparator) | 构造函数 | - |
+| Comparator<T> getComparator() | 获取比较器对象 | - |
+| setComparator(Comparator< T > comparator) | 设置比较器对象 | - |
+| shiftUp(int idx) | 向上调整堆 | O(log(n)) |
