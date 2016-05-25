@@ -27,16 +27,16 @@
 | Heap(Collection< T > coll, Comparator< T > comparator) | 构造函数 | - |
 | Comparator< T > getComparator() | 获取比较器对象 | - |
 | setComparator(Comparator< T > comparator) | 设置比较器对象 | - |
-| shiftUp(int idx) | 向上调整堆 | $O(log(n))$ |
-| shiftDown(int idx) | 向下调整堆 | $O(log(n))$ |
+| shiftUp(int idx) | 向上调整堆 | O(log(n)) |
+| shiftDown(int idx) | 向下调整堆 | O(log(n)) |
 | int compare(Object o1, Object o2) | 比较两个数的大小 | - |
-| add(T item) | 添加一个元素 | $O(log(n))$ |
-| add(T[] arr) | 添加一组元素 | $O(n*log(n))$ |
-| add(Collection< T > coll) | 添加一组元素 | $O(n*log(n))$ |
-| T getTop() | 获取堆顶元素，但不删除 | $O(1)$ |
-| T deleteTop() | 删除堆顶结点 | $O(log(n))$ |
-| int size() | 获取堆的大小 | $O(1)$ |
-| boolean isEmpty() | 判断堆是否为空 | $O(1)$ |
+| add(T item) | 添加一个元素 | O(log(n)) |
+| add(T[] arr) | 添加一组元素 | O(n*log(n)) |
+| add(Collection< T > coll) | 添加一组元素 | O(n*log(n)) |
+| T getTop() | 获取堆顶元素，但不删除 | O(1) |
+| T deleteTop() | 删除堆顶结点 | O(log(n)) |
+| int size() | 获取堆的大小 | O(1) |
+| boolean isEmpty() | 判断堆是否为空 | O(1) |
 | clear() | 清空堆，如果有比较器，不会删除比较器 | - |
 | delete() | 删除元素，并且清空比较器对象 | - |
 | List< T > getData() | 获取堆中所有的数据 | - |
