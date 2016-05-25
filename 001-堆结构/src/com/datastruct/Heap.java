@@ -260,7 +260,6 @@ public class Heap<T> {
     }
 
 
-
     /**
      * 向堆中添加元素
      *
@@ -302,7 +301,7 @@ public class Heap<T> {
     }
 
     /**
-     * 删除堆顶结点
+     * 删除堆顶元素
      *
      * @return 堆顶结点
      */
@@ -372,6 +371,11 @@ public class Heap<T> {
         return data;
     }
 
+    /**
+     * 堆信息描述
+     *
+     * @return 堆信息描述字符串
+     */
     @Override
     public String toString() {
         return data.toString();
