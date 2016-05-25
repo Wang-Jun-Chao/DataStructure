@@ -17,7 +17,7 @@ import java.util.Random;
 public class HeapTest {
 
     // 产生的随机数数的个数
-    private final static int NUM = 50;
+    private final static int NUM = 20;
     // 下边界，包含
     private final static int LOWER = 0;
     // 上边界，不包含
@@ -35,9 +35,21 @@ public class HeapTest {
         return arr;
     }
 
+    private List<Node> getNodes() {
+        List<Integer> arr = getNumber();
+        List<Node> nodes = new ArrayList<>();
+
+        for (Integer i : arr) {
+            nodes.add(new Node(i));
+        }
+        return nodes;
+    }
+
+
     @Test
     public void testMaxHeapWithoutComparator() {
         List<Integer> arr = getNumber();
+        System.out.println("HeapTest.testMaxHeapWithoutComparator");
         System.out.println(arr);
         Heap<Integer> maxHeap = new Heap<>(arr);
         System.out.println(maxHeap);
@@ -46,6 +58,7 @@ public class HeapTest {
     @Test
     public void testMaxHeapWithComparator() {
         List<Integer> arr = getNumber();
+        System.out.println("HeapTest.testMaxHeapWithComparator");
         System.out.println(arr);
         Heap<Integer> maxHeap = new Heap<>(arr, new Comparator<Integer>() {
             @Override
@@ -77,6 +90,7 @@ public class HeapTest {
     @Test
     public void testMinHeapWithComparator() {
         List<Integer> arr = getNumber();
+        System.out.println("HeapTest.testMinHeapWithComparator");
         System.out.println(arr);
         Heap<Integer> maxHeap = new Heap<>(arr, new Comparator<Integer>() {
             @Override
@@ -105,14 +119,6 @@ public class HeapTest {
         System.out.println(maxHeap);
     }
 
-    private List<Node> getNodes() {
-        List<Integer> arr = getNumber();
-        List<Node> nodes = new ArrayList<>();
 
-        for (Integer i : arr) {
-            nodes.add(new Node(i));
-        }
-        return nodes;
-    }
 
 }
