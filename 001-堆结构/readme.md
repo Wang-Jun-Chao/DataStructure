@@ -16,8 +16,9 @@
 ##API介绍
 
 
-| 项目      |    价格 | 数量  |
+| 方法名      |    作用 | 时间复杂度  |
 | :--------: | :--------: | :--: |
-| Computer  | 1600 元 |  5   |
-| Phone     |   12 元 |  12  |
-| Pipe      |    1 元 | 234  |
+| Heap()  | 无参构造函数 |  -   |
+| Heap(T t)     |   构造函数 |  -  |
+| Heap(T t, Comparator<T> comparator)      |    构造函数 | -  |
+| Heap(Comparator<T> comparator) | 构造函数 | - |
