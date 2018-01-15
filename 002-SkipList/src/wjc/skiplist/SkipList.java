@@ -9,7 +9,7 @@ import java.util.Random;
  * Github: https://github.com/wang-jun-chao
  * All Rights Reserved !!!
  */
-public class SkipList<K extends Comparable<K>, V> {
+public class SkipList {
 
     public SkipListEntry head;    // First element of the top level
     public SkipListEntry tail;    // Last element of the top level
