@@ -1,4 +1,4 @@
-package com.datastruct;
+package wjc.datastruct;
 
 import org.junit.Test;
 
