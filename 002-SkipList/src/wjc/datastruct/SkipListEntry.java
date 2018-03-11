@@ -1,4 +1,4 @@
-package wjc.skiplist;
+package wjc.datastruct;
 
 /**
  * Author: 王俊超

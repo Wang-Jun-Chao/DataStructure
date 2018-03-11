@@ -1,4 +1,4 @@
-package wjc.skiplist;
+package wjc.datastruct;
 
 import java.util.Random;
 
